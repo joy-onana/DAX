@@ -1,0 +1,12 @@
+----Filter Column
+Onboarded = CALCULATE(sum(column)), FILTER('tablename','tablename[columnname] = 'required')
+
+
+----PreviousMonth Value
+CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolumn],-1,MONTH)
+
+
+-----CurrentMonth Value
+CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolumn])=MONTH(TODAY))))
+
+
