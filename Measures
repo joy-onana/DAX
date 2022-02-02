@@ -7,6 +7,4 @@ CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolum
 
 
 -----CurrentMonth Value
-CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolumn])=MONTH(TODAY))))
-
-
+CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolumn])=MONTH(TODAY)))
