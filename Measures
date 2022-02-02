@@ -8,3 +8,7 @@ CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolum
 
 -----CurrentMonth Value
 CALCULATE(SUM('tablename'[sum(columnname)]),PARALLELPERIOD('tablename'[datecolumn])=MONTH(TODAY)))
+
+-----MAXIMUM VALUE IN A A DATASET
+MAXX(distinct(World[location]),MAX(World[fully_vaccinated]))
+
